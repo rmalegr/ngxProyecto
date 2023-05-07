@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Persona } from './persona';
 
 @Component({
   selector: 'app-root',
@@ -6,17 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
-  title = 'ngrx';
-  nombrePersona :string = 'Rodrigo'
-
-  imprimirNombre(nombre:string):void{
-    if (nombre != undefined && nombre != null){
-        const alumno = {
-          name: nombre,
-          dni: '30790171',
-        };
-       console.log(alumno.name.toUpperCase());
-    }
-   
-  }
+  //declaracion de variables
+  title : string = 'NgXS'
+  
 }
